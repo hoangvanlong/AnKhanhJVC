@@ -42,10 +42,14 @@
 		border-bottom: 1px solid color-get($mau,main-3)
 		background: linear-gradient(-90deg, #b18308 0%, #f2da85 100%) 
 		text-align-last: center
-		&:focus
-	option 
+	select option
 		text-align: center
-	input[type=text]
-		border: 2px solid red
-		border-radius: 4px
-		background: red
+		margin: 40px
+		background: color-get($mau, main)
+		color: #fff
+		text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4)
+		border: none
+		border-radius: none
+		+media-breakpoint-down(md)
+			&:active
+				background: linear-gradient(-90deg, #b18308 0%, #f2da85 100%) 
