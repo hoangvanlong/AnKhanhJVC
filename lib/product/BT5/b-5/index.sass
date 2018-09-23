@@ -8,15 +8,17 @@
 	+media-breakpoint-up(lg)
 		+pad(4rem 0)
 	.h2
-		+fz(1.8rem)
-		color: color-get($mau,main)
+		+fz(2rem)
+		color: color-get($ankhanh,main)
 		font-weight: bold
 		+mar(0)
+		+media-breakpoint-up(lg)
+			+fz(r(36px))
 	.list-thumb
 		.slick-slide
-			min-height: 400px 
+			min-height: r(400px) 
 			+media-breakpoint-up(lg)
-				min-height: 400px
+				min-height: r(400px)
 				margin: 4rem 0
 				&.slick-current.slick-center
 					+transform(scale(1.3))
@@ -24,7 +26,7 @@
 					.zoom-item
 						display: block
 			.zoom-item
-				color: color-get($mau,trang)
+				color: color-get($ankhanh,trang)
 				+pos(abs, 100% null null 50%)
 				+transform(translateX(-50%) translateY(-100%))
 				z-index: 10
@@ -34,15 +36,15 @@
 				width: 100%
 				.h3
 					text-transform: uppercase
-					+fz(1rem)
+					+fz(r(16px))
 					+pad(.8rem 0)
 					+mar(0)
 					background: rgba(0, 0, 0, 0.7)
 
 	.slick-slider
 		.slick-arrow
-			// background: darken(color-get($mau,main) ,0%)
-			color: darken(color-get($mau,den) ,0%)
+			// background: darken(color-get($ankhanh,main) ,0%)
+			color: darken(color-get($ankhanh,den) ,0%)
 			+pad(.5rem_)
 			width: 3rem
 			height: 3rem
@@ -50,7 +52,7 @@
 			&:before
 				font-family: 'Font Awesome 5 Free'
 				font-weight: 900
-				color: darken(color-get($mau,den) ,0%)
+				color: darken(color-get($ankhanh,den) ,0%)
 				font-size: 1.5rem 
 			&.slick-prev
 				left: 0
@@ -61,9 +63,9 @@
 				&:before
 					content: '\f061'
 			&:hover 
-				background: darken(color-get($mau,main) ,0%)
+				background: darken(color-get($ankhanh,main) ,0%)
 				&:before
-					color: darken(color-get($mau,trang) ,0%)
+					color: darken(color-get($ankhanh,trang) ,0%)
 		.slick-list
 			text-align: center
 			.slick-slide

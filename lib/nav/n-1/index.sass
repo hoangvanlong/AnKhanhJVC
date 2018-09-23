@@ -5,7 +5,7 @@
 
 .canhcam-nav-9
 	.nav-list
-		background: darken(color-get($mau,whites),5%)
+		background: darken(color-get($ankhanh,trang),5%)
 		ul
 			margin-bottom: 0
 			display: flex
@@ -32,15 +32,15 @@
 					align-items: center
 					box-sizing: border-box
 					+pad(.8rem 1rem)
-					color: darken(color-get($mau,whites),50%)
+					color: darken(color-get($ankhanh,trang),50%)
 					text-decoration: none
 					position: relative
 					+lh(1.3rem)
-					+fz(1rem)
+					+fz(r(16px))
 					+fw(400)
 					+transition(all 0.3s ease-in-out)
 					&.active
-						color: color-get($mau,main)
+						color: color-get($ankhanh,main)
 					&.active,&:hover
 						&:before
 							content: ''
@@ -48,7 +48,7 @@
 							transform: translate(-50%,-50%)
 							width: 50px
 							height: 2px
-							background: color-get($mau,main)
+							background: color-get($ankhanh,main)
 							transition: .3s all ease-in-out
 	+media-breakpoint-up(md)
 		z-index: 99
@@ -65,16 +65,16 @@
 					top: 50%
 					width: 1px
 					height: 40px
-					background: darken(color-get($mau,trang),30%)
+					background: darken(color-get($ankhanh,trang),30%)
 					right: -3px
 					transform: translate(-50%,-50%)
 				&:last-child
 					&:after
 						display: none
-	+media-breakpoint-up(xl)
-		// top: 63.3px
-		.nav-list
-			ul
-				li
-					a
-						+fz(1.1rem)
+	// +media-breakpoint-up(xl)
+	// 	// top: 63.3px
+	// 	.nav-list
+	// 		ul
+	// 			li
+	// 				a
+	// 					+fz(r(16px))

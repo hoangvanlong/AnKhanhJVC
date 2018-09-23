@@ -10,26 +10,26 @@
 	.box-content
 		.title
 			text-transform: uppercase
-			color: #fff
+			color: color-get($ankhanh, trang)
 			font-weight: bold
 			+fz(2rem)
 			+media-breakpoint-up(lg)
 				+fz(r(36px))
 		.content
-			color: #fff
+			color: color-get($ankhanh, trang)
 			+fz(r(16px))
 			+fw(300)
 	.btn-more
 		+fz(r(16px))
-		color: color-get($mau,trang)
+		color: color-get($ankhanh,trang)
 		+pad(r(11px) r(38px))
 		border-radius: 20px
 		text-transform: uppercase
 		+fw(500)
-		border: 2px solid color-get($mau,trang)
+		border: 2px solid color-get($ankhanh,trang)
 		&:active, &:hover
-			background: color-get($mau,trang)
-			color: color-get($mau,den)
+			background: color-get($ankhanh,trang)
+			color: color-get($ankhanh,den)
 	+media-breakpoint-up(lg)
 		.box-content
 			max-width: 80%
@@ -47,7 +47,7 @@
 				width: 100%
 				height: 100%
 				padding: 1rem
-				color: #fff
+				color: color-get($ankhanh,trang)
 				z-index: 1
 				+text-sha(2px 2px 3px rgba(0,0,0,.2))
 				display: flex
@@ -57,10 +57,6 @@
 					+fz(r(18px))
 					+fw(300)
 					text-transform: uppercase
-				time
-					+fz(.9rem)
-					+fw(200)
-					color: darken(color-get($mau,whites) ,10%)
 				&:after
 					content: ''
 					+pos(abs, null 0 0 null)

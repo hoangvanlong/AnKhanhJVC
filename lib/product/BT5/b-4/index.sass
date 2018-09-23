@@ -8,10 +8,12 @@
 	+media-breakpoint-up(lg)
 		+pad(4rem 0)
 	.h2
-		+fz(1.8rem)
-		color: color-get($mau,main)
+		+fz(2rem)
+		color: color-get($ankhanh,main)
 		font-weight: bold
 		+mar(0)
+		+media-breakpoint-up(lg)
+			+fz(r(36px))
 	.owl-carousel
 		position: relative
 		// Main
@@ -23,7 +25,7 @@
 					+pad(.5rem_)
 					width: 3rem
 					height: 3rem
-					// background: darken(color-get($mau,trang),5%)
+					// background: darken(color-get($ankhanh,trang),5%)
 					// +bor-rad(50%)
 					// text-align: center
 					+fz(1.5rem)
@@ -31,7 +33,7 @@
 						outline: none
 				&:hover, &.active
 					&.owl-prev, &.owl-next
-						background: color-get($mau,main)
+						background: color-get($ankhanh,main)
 		+media-breakpoint-up(md)
 			.owl-nav
 				margin-top: 0
@@ -51,25 +53,25 @@
 				&:focus
 					outline: none
 				span
-					background: color-get($mau,trang)
+					background: color-get($ankhanh,trang)
 				&.active
 					span
-						background: color-get($mau,main)
+						background: color-get($ankhanh,main)
 		// List
 		&.list-items
 			.item
 				a
-					color: color-get($mau,den)
+					color: color-get($ankhanh,den)
 					text-decoration: none
 					h3
 						+pad(1rem null)
-						background: color-get($mau, vang-1)
-						+fz(1rem)
+						background: color-get($ankhanh, vang-2)
+						+fz(r(16px))
 						text-transform: uppercase
 				&:hover
 					img
 						+opacity(.8)
 					a
-						color: color-get($mau,den)
+						color: color-get($ankhanh,den)
 					h3
-						background: color-get($mau,main)
+						background: color-get($ankhanh,main)

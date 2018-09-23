@@ -9,22 +9,22 @@
 		// Main
 		.owl-stage-outer
 			.item
-				min-height: 380px
+				min-height: r(380px)
 				+media-breakpoint-up(lg)
-					min-height: 580px
+					min-height: r(580px)
 				.title
 					+pos(abs, 20% null null 0)
 					text-align: center
 					width: 100%
 					+pad(0 1rem)
 					h1
-						color: color-get($mau,trang)
+						color: color-get($ankhanh,trang)
 						+text-sha(1px 1px 3px rgba(0,0,0,.4))
 					p
-						color: color-get($mau,trang)
+						color: color-get($ankhanh,trang)
 						+text-sha(2px 2px 3px rgba(0,0,0,.2))
-						+fz(1.5rem)
-						+lh(1.8rem)
+						+fz(r(36px))
+						+lh(2.8rem)
 						+fw(300)
 						+media-breakpoint-up(md)
 							max-width: 50%
@@ -44,8 +44,8 @@
 						outline: none
 				&:hover, &.active
 					&.owl-prev, &.owl-next
-						background: color-get($mau,main)
-						color: color-get($mau,trang)
+						background: color-get($ankhanh,main)
+						color: color-get($ankhanh,trang)
 			+media-breakpoint-up(md)
 				+opacity(0)
 				margin-top: 0
@@ -68,10 +68,10 @@
 				&:focus
 					outline: none
 				span
-					background: darken(color-get($mau,trang),5%)
+					background: darken(color-get($ankhanh,trang),5%)
 				&.active
 					span
-						background: color-get($mau,main)
+						background: color-get($ankhanh,main)
 	&:hover
 		+media-breakpoint-up(md)
 			.owl-carousel

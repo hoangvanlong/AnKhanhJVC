@@ -5,18 +5,18 @@
 
 section.canhcam-project-detail-5
 	+pad(0 0 3rem 0)
-	background: color-get($mau,trang)
+	background: color-get($ankhanh,trang)
 	.slide
 		.title
 			margin-top: r(46px)
 			+fz(2rem)
-			color: color-get($mau,main)
+			color: color-get($ankhanh,main)
 			font-weight: bold
 			+media-breakpoint-up(lg)
 				+fz(r(36px))
 		.brief-content
 			+fz(r(22px))
-			color: color-get($mau,duong-1)
+			color: color-get($ankhanh,brief-content)
 	// +media-breakpoint-up(lg)
 	// 	.slide
 	// 		+pad(null 6rem)
@@ -26,13 +26,13 @@ section.canhcam-project-detail-5
 			img
 				padding: .5rem
 	.carousel-1
-		color: color-get($mau,trang)
+		color: color-get($ankhanh,trang)
 		.item
 			position: relative
 			justify-content: center
 			display: flex
 			&.active
-				color: color-get($mau,extra)
+				color: color-get($ankhanh,extra)
 			figure
 				+mar(0)
 		// Nav
@@ -46,13 +46,13 @@ section.canhcam-project-detail-5
 					height: 3rem
 					+bor-rad(50%)
 					text-align: center
-					color: color-get($mau,main)
-					background: color-get($mau,trang)
+					color: color-get($ankhanh,main)
+					background: color-get($ankhanh,trang)
 					&:focus
 						outline: none
 				+media-breakpoint-up(lg)
 					&.owl-prev, &.owl-next
-						color: color-get($mau,main)
+						color: color-get($ankhanh,main)
 						background: transparent
 						transform: translateY(-50%)
 						&.owl-prev
@@ -66,7 +66,7 @@ section.canhcam-project-detail-5
 			.owl-dot
 				&.active
 					span
-						background: color-get($mau,extra)
+						background: color-get($ankhanh,extra)
 	.carousel-2
 		.item
 			display: none
@@ -82,7 +82,7 @@ section.canhcam-project-detail-5
 					width: 100%
 					+mar(0)
 					+pad(1rem null)
-					color: color-get($mau,trang)
+					color: color-get($ankhanh,trang)
 					background: rgba(0, 0, 0, 0.6)
 		.owl-nav
 			button
@@ -90,16 +90,16 @@ section.canhcam-project-detail-5
 					+pad(.5rem_)
 					width: 3rem
 					height: 3rem
-					color: color-get($mau,trang)
+					color: color-get($ankhanh,trang)
 					+bor-rad(50%)
-					background: color-get($mau,main)
+					background: color-get($ankhanh,main)
 					text-align: center
 					&:focus
 						outline: none
 				&:hover, &.active
 					&.owl-prev, &.owl-next
-						background: color-get($mau,main)
-						color: color-get($mau,trang)
+						background: color-get($ankhanh,main)
+						color: color-get($ankhanh,trang)
 			+media-breakpoint-up(md)
 				+opacity(1)
 				margin-top: 0
@@ -118,7 +118,7 @@ section.canhcam-project-detail-5
 						&:hover, &.active
 							&.owl-prev, &.owl-next
 								background: none
-								color: color-get($mau,extra)
+								color: color-get($ankhanh,extra)
 					&.owl-prev
 						+pos(abs, 50% null null 1rem)
 					&.owl-next

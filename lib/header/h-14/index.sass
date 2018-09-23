@@ -5,7 +5,7 @@
 //////////////////////////////////////
 
 .canhcam-header-14
-	background: color-get($mau,trang)
+	background: color-get($ankhanh,trang)
 	box-shadow: 0 0 5px rgba(0,0,0,.5)
 	&.fixedheader
 		position: fixed
@@ -22,10 +22,10 @@
 		align-items: center
 	.phone
 		+pad(1rem)
-		background: color-get($mau,main)
+		background: color-get($ankhanh,main)
 		p
 			+fw(500)
-			color: color-get($mau,trang)
+			color: color-get($ankhanh,trang)
 			&:before
 				content: '\f3f2'
 				+fz(1rem)
@@ -60,15 +60,15 @@
 					content: ''
 					height: 12px
 					width: 1px
-					background: color-get($mau,den)
+					background: color-get($ankhanh,den)
 					+pos(abs,50% null null 0)
 					transform: translateY(-50%)
 			a
 				text-decoration: none
-				color: color-get($mau,den)
+				color: color-get($ankhanh,den)
 			&.active
 				a
-					color: color-get($mau,extra)
+					color: color-get($ankhanh,extra)
 	.social
 		margin-bottom: 0
 		list-style: none
@@ -83,52 +83,52 @@
 			+ li
 				margin-left: .5rem
 			&.search, &:hover
-				background: color-get($mau,den-1)
+				background: color-get($ankhanh,den-1)
 			a
 				text-decoration: none
 				+pad(0_)
 				+lh(25px)
-				color: color-get($mau,trang)
+				color: color-get($ankhanh,trang)
 	.k-menu-bar
-		color: color-get($mau,extra)
+		color: color-get($ankhanh,extra)
 		.k-button-toggle
-			color: color-get($mau,extra)
+			color: color-get($ankhanh,extra)
 		.navbar-brand
 			img
 				max-height: 3rem
 		.nav
 			.nav-item
 				.nav-link
-					color: color-get($mau,extra)
+					color: color-get($ankhanh,extra)
 		
 	.k-responsive-menu
-		background: color-get($mau,trang)
+		background: color-get($ankhanh,trang)
 		.navbar-brand
-			color: color-get($mau,trang)
+			color: color-get($ankhanh,trang)
 			img
 				max-height: 3rem
 		.nav
 			+pad(null 1rem)
 			.nav-item
 				.nav-link
-					color: lighten(color-get($mau,den),0%)
+					color: lighten(color-get($ankhanh,den),0%)
 					text-transform: uppercase
 					+fw(500)
 					+pad(1rem 0)
-					border-bottom: 1px solid darken(color-get($mau,trang),10%)
+					border-bottom: 1px solid darken(color-get($ankhanh,trang),10%)
 				&:hover, &.active, &.show
 					.nav-link
-						color: color-get($mau,extra)
+						color: color-get($ankhanh,extra)
 		.k-menu-bar
 			.k-button-toggle
-				color: color-get($mau,extra)
+				color: color-get($ankhanh,extra)
 	
 	// CHANGE MENU
 
 	+media-breakpoint-up(lg)
 		
 		.k-responsive-menu
-			background: color-get($mau,trang)
+			background: color-get($ankhanh,trang)
 			padding-top: 0
 			padding-bottom: 0
 			position: relative
@@ -144,7 +144,7 @@
 					+ .nav-item
 						margin-left: .7rem
 					.nav-link
-						color: lighten(color-get($mau,den),0%)
+						color: lighten(color-get($ankhanh,den),0%)
 						+fw(400)
 						border-bottom: none
 						+pad(1rem 0)
@@ -156,19 +156,19 @@
 								+lh(0)
 					&:hover, &.active, &.show
 						.nav-link
-							color: color-get($mau,extra)
+							color: color-get($ankhanh,extra)
 							position: relative
 							&:after
 								content: ''
 								width: 100%
 								height: 3px
 								+pos(abs, null null 0 0)
-								background: color-get($mau,extra)
+								background: color-get($ankhanh,extra)
 					.dropdown-menu
 						.dropdown-item
-							color: lighten(color-get($mau,den),40%)
+							color: lighten(color-get($ankhanh,den),40%)
 							&:active 
-								color: color-get($mau,trang)
+								color: color-get($ankhanh,trang)
 			.mainnav
 				display: flex
 				flex-direction: column
@@ -177,7 +177,7 @@
 					display: flex
 					justify-content: flex-end
 					+transition(.3s all ease-in-out)
-					border-bottom: 1px solid darken(color-get($mau,trang),10%)
+					border-bottom: 1px solid darken(color-get($ankhanh,trang),10%)
 					.top-nav
 						+pad(0)
 						flex-direction: initial
@@ -201,7 +201,7 @@
 						+pad(0 1rem)
 						background: none
 						p
-							color: color-get($mau,extra)
+							color: color-get($ankhanh,extra)
 					.language
 						padding-left: 1rem
 		&.fixedheader
