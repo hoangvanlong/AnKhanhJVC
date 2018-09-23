@@ -3,35 +3,37 @@
 // CODE
 //////////////////////////////////////
 
-section.canhcam-project-detail-7
-	+pad(0 0 3rem 0)
-	background: color-get($ankhanh,trang)
-	+media-breakpoint-up(lg)
-		+pad(0 0 4rem 0)
-	.slide
-		.title
-			margin-top: r(46px)
-			+fz(2rem)
-			color: color-get($ankhanh,main)
-			font-weight: bold
-			+media-breakpoint-up(lg)
-				+fz(r(36px))
-		.content
-			+fz(r(16px))
-		.brief-content
-			+fz(r(22px))
-			color: color-get($ankhanh,brief-content)
-		.item
-			.circle
-				list-style-type: disc
-			p
+section.canhcam-introduce-detail-3
+	.fixed-width
+		+pad(0 5%)
+		.slide
+			.title
+				+pad(2rem 0)
+				margin-top: r(46px)
+				+fz(2rem)
+				color: color-get($ankhanh,main)
+				font-weight: bold
 				+mar(0)
-		.box-img
-			img
-				width: 100%
-		+media-breakpoint-up(lg)
+				+media-breakpoint-up(lg)
+					+fz(r(36px))
+					padding: 4rem 0
+			.content
+				+fz(r(16px))
+			.brief-content
+				+fz(r(22px))
+				color: color-get($ankhanh,brief-content)
+			.item
+				.circle
+					list-style-type: disc
+				p
+					+mar(0)
 			.box-img
-				display: flex
-				justify-content: center
+				+mar(0)
 				img
-					width: initial
+					width: 100%
+			+media-breakpoint-up(lg)
+				.box-img
+					display: flex
+					justify-content: center
+					img
+						width: initial
