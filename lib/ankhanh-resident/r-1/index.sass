@@ -14,7 +14,7 @@ body
 		+fz(2.57rem)
 		margin-bottom: 2rem
 		+fw(600)
-		color: color-get($mau, main)
+		color: color-get($mau-ankhanh, main)
 	.news-list
 		.item
 			display: block
@@ -28,7 +28,7 @@ body
 					+transition(all .5s ease-in-out)
 					padding-bottom: 1rem
 					margin-bottom: 2rem
-					box-shadow: 0px 1px 0px 0 color-get($mau, xam-3)
+					box-shadow: 0px 1px 0px 0 color-get($mau-ankhanh, xam-3)
 					.text
 						+pad(1.5rem 0)
 						flex-wrap: nowrap
@@ -36,13 +36,13 @@ body
 						.date
 							height: 4rem
 							+pad(.3rem 2rem)
-							background: color-get($mau,main)
+							background: color-get($mau-ankhanh,main)
 							+media-breakpoint-up(md)
 								+pad(.3rem 2rem)
 							p.day 
 								+fz(1.4rem)
 								+fw(600)
-								color: color-get($mau, trang)
+								color: color-get($mau-ankhanh, trang)
 								display: flex
 								justify-content: center
 								align-items: center 
@@ -52,11 +52,11 @@ body
 									content: " "
 									+pos(abs, 50% null null null)
 									width: 50%
-									background: color-get($mau, trang)
+									background: color-get($mau-ankhanh, trang)
 									height: 1px
 									top: 50%
 							time
-								color: color-get($mau, trang)
+								color: color-get($mau-ankhanh, trang)
 								display: flex
 								justify-content: center
 								align-items: center 
@@ -67,13 +67,13 @@ body
 						+fz(1.14rem)
 						+fw(600)
 						line-height: 1.5rem
-						color: color-get($mau,den)
+						color: color-get($mau-ankhanh,den)
 					time
 						+fz(.9rem)
 						+fw(200)
-						color: darken(color-get($mau,trang) ,10%)
+						color: darken(color-get($mau-ankhanh,trang) ,10%)
 					p.content 
-						color: darken(color-get($mau,trang) ,50%)
+						color: darken(color-get($mau-ankhanh,trang) ,50%)
 						line-height: 1.5rem
 						+fz(1.07rem)
 						display: -webkit-box
@@ -89,11 +89,11 @@ body
 						padding-left: 1rem
 						box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.08)
 						h3 
-							color: color-get($mau,main)
+							color: color-get($mau-ankhanh,main)
 			+media-breakpoint-down(md)
 				&:active
 					figcaption.box 
 						padding-left: 1rem
 						box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.08)
 						h3 
-							color: color-get($mau,main)
+							color: color-get($mau-ankhanh,main)

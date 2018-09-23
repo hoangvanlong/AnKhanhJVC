@@ -126,12 +126,12 @@
                 "ankhanh-navbar/n-1"
             ]
         },
-		"panigation": {
+		"ankhanh-panigation": {
             "header": [
                 "header/h-14"
             ],
             "body": [
-                "panigation/p-1"
+                "ankhanh-panigation/p-1"
             ]
         },
 		"ankhanh-progress": {
