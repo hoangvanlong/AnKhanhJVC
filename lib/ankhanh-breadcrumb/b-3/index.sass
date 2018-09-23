@@ -15,8 +15,10 @@
 		width: 100%
 		display: none
 		z-index: 100
-		+media-breakpoint-up(md)
+		+media-breakpoint-up(lg)
 			display: block
+		+media-breakpoint-down(lg)
+			display: none
 		.breadcrumb
 			margin-bottom: 0
 			+bor-rad(0)
