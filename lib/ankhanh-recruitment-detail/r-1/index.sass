@@ -20,14 +20,17 @@ body
 					+fz(1.07rem)
 					+fw(400)
 					border: none
-					+pad(1rem 0 .5rem 2.5rem)
+					+pad(1rem 0 .5rem 1.5rem)
+					+media-breakpoint-up(md)
+						+pad(1rem 0 .5rem 2.5rem)
 				td 
 					+fz(1.07rem)
 					+fw(100)
 					border: none
 					+pad(1rem 0 .5rem 2.5rem)
-					+media-breakpoint-down(md)
-						text-align: center
+					text-align: center
+					+media-breakpoint-up(md)
+						text-align: left !important
 		hr
 			+mar(.5rem 0 1.5rem 0)
 		.title-news	
