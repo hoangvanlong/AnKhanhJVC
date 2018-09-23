@@ -4,17 +4,22 @@
 //////////////////////////////////////
 
 section.canhcam-project-detail-6
-	+pad(3rem 0)
+	+pad(0 0 3rem 0)
 	background: color-get($mau,trang)
+	+media-breakpoint-up(lg)
+		+pad(0 0 4rem 0)
 	.slide
 		.title
-			+fz(1.8rem)
+			margin-top: r(46px)
+			+fz(2rem)
 			color: color-get($mau,main)
 			font-weight: bold
+			+media-breakpoint-up(lg)
+				+fz(r(36px))
 		.content
-			+fz(1rem)
+			+fz(r(16px))
 		.brief-content
-			+fz(1.3rem)
+			+fz(r(22px))
 			color: color-get($mau,duong-1)
 		.item
 			.circle
