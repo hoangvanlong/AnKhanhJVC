@@ -1,0 +1,22 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.location-home
+	.h1
+		+mar(2rem 0)
+		+fz(2rem)
+		color: color-get($ankhanh,main)
+		font-weight: bold
+		+media-breakpoint-up(lg)
+			+fz(r(36px))
+			+mar(4rem 0)
+	.map
+		min-height: (r(450px))
+		border: 1px solid color-get($ankhanh,main)
+	.h2
+		+fz(r(22px))
+		color: color-get($ankhanh,brief-content)
+	.content
+		+fz(r(16px))

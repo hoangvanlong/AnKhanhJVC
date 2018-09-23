@@ -7,16 +7,18 @@ body
 .canhcam-ankhanh-contact-c-1
 	margin-bottom: 5.64rem
 	h2 
-		+fz(2.57rem)
+		+fz(2rem)
 		+mar(3.85rem 0 2rem 0)
-		+fw(inhirit)
-		color: color-get($mau-ankhanh, main)
+		+fw(bold)
+		color: color-get($ankhanh, main)
+		+media-breakpoint-up(lg)
+			+fz(r(36px))
 	.info
 		h3
-			+fz(1.3rem)
+			+fz(r(20px))
 			text-transform: uppercase
 		.inf
-			background: color-get($mau-ankhanh, main)
+			background: color-get($ankhanh, main)
 			+pad(2rem)
 			.title
 				margin-bottom: .5rem
@@ -24,22 +26,22 @@ body
 					+fz(1.43rem)
 					+fw(400)
 					+mar(0)
-					color: color-get($mau-ankhanh, trang)
+					color: color-get($ankhanh, trang)
 			p 
 				+fz(1.14rem)
 				+fw(100)
 				margin-bottom: .5rem
-				color: color-get($mau-ankhanh, trang)
+				color: color-get($ankhanh, trang)
 				opacity: .8
 		.company
 			+mar(0 0 3.5rem 0)
 	form
 		input, textarea
-			background: darken(color-get($mau-ankhanh,trang) ,3%)
+			background: darken(color-get($ankhanh,trang) ,3%)
 			+fz(1rem)
 			+fw(100)
 		.form-control
-			color: color-get($mau-ankhanh, den)
+			color: color-get($ankhanh, den)
 			+pad(.6rem 1rem)
 			+mar(0 .5rem .5rem .5rem)
 		.input
@@ -48,7 +50,7 @@ body
 			ul
 				margin-bottom: 0
 				+fz(.9rem)
-				color: color-get($mau-ankhanh,do-1)
+				color: color-get($ankhanh,do-1)
 				li
 					padding-left: 1rem
 		.captcha
@@ -65,7 +67,7 @@ body
 		.btn-submit
 			cursor: pointer
 			width: 80%
-			background: color-get($mau-ankhanh, xam-3)
+			background: color-get($ankhanh, xam-3)
 			justify-content: center
 			align-items: center
 			display: flex
@@ -76,12 +78,12 @@ body
 			+transition(all .5s ease-in-out)
 			a
 				+fw(bold)
-				color: color-get($mau-ankhanh, xam-submit)
+				color: color-get($ankhanh, xam-submit)
 				+fz(1.07rem)
 			+media-breakpoint-up(md)
 				&:hover
-					background: lighten(color-get($mau-ankhanh, xam-3), 2%)
+					background: lighten(color-get($ankhanh, xam-3), 2%)
 			+media-breakpoint-down(md)
 				&:active
-					background: lighten(color-get($mau-ankhanh, xam-3), 2%)
+					background: lighten(color-get($ankhanh, xam-3), 2%)
 

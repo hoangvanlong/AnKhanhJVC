@@ -9,7 +9,7 @@ body
 	+media-breakpoint-up(lg)
 		+pad(4rem 0)
 	.bgw
-		background: white
+		background: color-get($ankhanh, trang)
 	.year
 		display: flex
 		p 
@@ -23,7 +23,7 @@ body
 		+fz(2.57rem)
 		margin-bottom: 2rem
 		+fw(600)
-		color: color-get($mau-ankhanh, main)
+		color: color-get($ankhanh, main)
 	select.yearProgress
 		font-size: 1.14rem
 		+fw(100)
@@ -32,7 +32,7 @@ body
 		border-radius: 0
 		padding-left: 1rem
 		margin-bottom: 2.14rem
-		color: color-get($mau-ankhanh, xam-4)
+		color: color-get($ankhanh, xam-2)
 	.news-list
 		.item
 			margin-bottom: 2.14rem
@@ -43,7 +43,7 @@ body
 				position: relative
 				img
 				figcaption.box 
-					background: color-get($mau-ankhanh, xam-5)
+					background: color-get($ankhanh, xam-3)
 					+transition(all .5s ease-in-out)
 					margin-bottom: 2rem
 					.text-progress
@@ -52,13 +52,13 @@ body
 						.date
 							height: 4rem
 							+pad(.3rem 2rem)
-							background: color-get($mau-ankhanh,main)
+							background: color-get($ankhanh,main)
 							+media-breakpoint-up(md)
 								+pad(.3rem 2rem)
 							p.day 
 								+fz(1.4rem)
 								+fw(600)
-								color: color-get($mau-ankhanh, trang)
+								color: color-get($ankhanh, trang)
 								display: flex
 								justify-content: center
 								align-items: center 
@@ -68,11 +68,11 @@ body
 									content: " "
 									+pos(abs, 50% null null null)
 									width: 50%
-									background: color-get($mau-ankhanh, trang)
+									background: color-get($ankhanh, trang)
 									height: 1px
 									top: 50%
 							time
-								color: color-get($mau-ankhanh, trang)
+								color: color-get($ankhanh, trang)
 								display: flex
 								justify-content: center
 								align-items: center 
@@ -83,15 +83,15 @@ body
 						+fz(1.28rem)
 						+fw(400)
 						line-height: 1.5rem
-						color: color-get($mau-ankhanh,den)
+						color: color-get($ankhanh,den)
 						text-align: center
 						margin-bottom: 0
 					time
 						+fz(.9rem)
 						+fw(200)
-						color: darken(color-get($mau-ankhanh,trang) ,10%)
+						color: darken(color-get($ankhanh,trang) ,10%)
 					p.content 
-						color: darken(color-get($mau-ankhanh,trang) ,50%)
+						color: darken(color-get($ankhanh,trang) ,50%)
 						line-height: 1.5rem
 						+fz(1.07rem)
 						display: -webkit-box
@@ -109,7 +109,7 @@ body
 						background: -ms-linear-gradient( 180deg, rgb(177,131,8) 0%, rgb(242,218,133) 100%)
 						box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.08)
 						h3 
-							color: color-get($mau-ankhanh,trang)
+							color: color-get($ankhanh,trang)
 			+media-breakpoint-down(md)
 				&:active
 					figcaption.box 
@@ -118,4 +118,4 @@ body
 						background: -ms-linear-gradient( 180deg, rgb(177,131,8) 0%, rgb(242,218,133) 100%)
 						box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.08)
 						h3 
-							color: color-get($mau-ankhanh,trang)
+							color: color-get($ankhanh,trang)

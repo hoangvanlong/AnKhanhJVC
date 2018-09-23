@@ -1,0 +1,21 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.support-home
+	.h1
+		+mar(2rem 0)
+		+fz(2rem)
+		color: color-get($ankhanh,main)
+		font-weight: bold
+		+media-breakpoint-up(lg)
+			+mar(4rem 0 2rem)
+			+fz(r(36px))
+	.box-content
+		.content
+			+fz(r(16px))
+		.nav-item
+			&:last-child
+				.content
+					+lh(2.2rem)

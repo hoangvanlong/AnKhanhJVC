@@ -1,0 +1,49 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.home-box-2
+	.item
+		background-size: cover
+		+pad(4rem r(15px))
+		&:first-child
+			display: flex
+			justify-content: flex-end
+		&:nth-child(2)
+			min-height: r(500px)
+		+media-breakpoint-up(md)
+			background-size: auto
+		+media-breakpoint-up(lg)
+			+pad(4rem 0)
+		.fixed-width
+			width: 100%
+			+media-breakpoint-up(md)
+			+media-breakpoint-up(lg)
+				max-width: 75%
+				+mar(0 r(15px) 0 0)
+			.h2
+				color: color-get($ankhanh,trang)
+				font-weight: bold
+				text-transform: uppercase
+				+mar(0 0 2rem 0)
+				+fz(2rem)
+				+media-breakpoint-up(lg)
+					+fz(r(36px))
+			.box-content
+				color: #fff
+				.brief-content
+					+fz(r(16px))
+					+mar(0 0 2rem 0)
+					font-weight: 300
+				.btn-more
+					+fz(r(16px))
+					color: color-get($ankhanh,trang)
+					+pad(r(11px) r(38px))
+					border-radius: 20px
+					text-transform: uppercase
+					+fw(500)
+					border: 2px solid color-get($ankhanh,trang)
+					&:active, &:hover
+						background: color-get($ankhanh,trang)
+						color: color-get($ankhanh,den)

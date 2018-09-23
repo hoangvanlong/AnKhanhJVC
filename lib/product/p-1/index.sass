@@ -1,0 +1,39 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.product-home
+	.fixed-width
+		+pad(0 5%)
+		.h1
+			+mar(2rem 0)
+			+fz(2rem)
+			color: color-get($ankhanh,main)
+			font-weight: bold
+			+media-breakpoint-up(lg)
+				+mar(4rem 0)
+				+fz(r(36px))
+		.link
+			text-decoration: none
+			color: color-get($ankhanh,den)
+			&:hover, &:active
+				color: color-get($ankhanh,trang)
+				.item
+					figure
+						.box-content
+							background: linear-gradient(to right, #eed57e, #ba8c2d)
+			.item
+				min-height: 18.1rem
+				display: flex
+				align-items: flex-end
+				text-align: center
+				figure
+					width: 100%
+					+mar(0)
+					.box-content
+						+pad(1.5rem 0)
+						background: color-get($ankhanh,xam-cs)
+						.h2
+							+fz(r(18px))
+							+mar(0)

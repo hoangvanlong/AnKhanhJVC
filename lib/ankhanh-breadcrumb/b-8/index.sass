@@ -4,8 +4,8 @@
 //////////////////////////////////////
 .canhcam-ankhanh-breadcrumb
 	position: relative
-	color: color-get($mau, trang)
-	+fz(1.25rem)
+	color: color-get($ankhanh, trang)
+	+fz(r(16px))
 	+fw(100)
 	.main-breadcrumb
 		background: rgba(0,0,0,.3)
@@ -28,25 +28,25 @@
 				display: block
 				min-width: 1000px
 				height: 2.5rem
-				// background: color-get($mau,main)
+				// background: color-get($ankhanh,main)
 				+pos(abs, 0 100% null null)
 			.breadcrumb-item
-				// background: color-get($mau,main)
+				// background: color-get($ankhanh,main)
 				+pad(.5rem)
 				position: relative
 				line-height: 1.5rem
-				color: color-get($mau,trang)
+				color: color-get($ankhanh,trang)
 				display: flex
 				align-items: center
 				&:first-child
 					padding-left: 0
 				a
-					color: color-get($mau,trang)
+					color: color-get($ankhanh,trang)
 					text-decoration: none
 				// breakcrum item here
 				+ .breadcrumb-item
 					&:before
-						color: color-get($mau,trang)
+						color: color-get($ankhanh,trang)
 						content: '\e876'
 						font-family: 'Linearicons-Free'
 						line-height: 1
@@ -57,7 +57,7 @@
 				// 		display: inline-block
 				// 		width: 0
 				// 		height: 0
-				// 		border-bottom: 2.5rem solid color-get($mau,main)
+				// 		border-bottom: 2.5rem solid color-get($ankhanh,main)
 				// 		border-right: 2.5rem solid transparent
 				// 		+pos(abs, 0 -2.5rem null null)
 	.owl-carousel
@@ -80,10 +80,10 @@
 					width: 100%
 					+pad(0 1rem)
 					h1
-						color: color-get($mau,trang)
+						color: color-get($ankhanh,trang)
 						+text-sha(1px 1px 3px rgba(0,0,0,.4))
 					p
-						color: color-get($mau,trang)
+						color: color-get($ankhanh,trang)
 						+text-sha(2px 2px 3px rgba(0,0,0,.2))
 						+fz(1.5rem)
 						+lh(1.8rem)
@@ -106,8 +106,8 @@
 						outline: none
 				&:hover, &.active
 					&.owl-prev, &.owl-next
-						// background: color-get($mau,main)
-						color: color-get($mau,trang)
+						// background: color-get($ankhanh,main)
+						color: color-get($ankhanh,trang)
 			+media-breakpoint-up(md)
 				+opacity(0)
 				margin-top: 0
@@ -130,10 +130,10 @@
 		// 		&:focus
 		// 			outline: none
 		// 		span
-		// 			background: darken(color-get($mau,trang),5%)
+		// 			background: darken(color-get($ankhanh,trang),5%)
 		// 		&.active
 		// 			span
-						background: color-get($mau,main)
+						background: color-get($ankhanh,main)
 	&:hover
 		+media-breakpoint-up(md)
 			.owl-carousel

@@ -1,0 +1,14 @@
+extends _layout/layout.pug
+block variables
+	- var title = "Đối tác"
+	- var description = "Description for ankhanhjvc page"
+	- var bodyclass = "ankhanhjvc"
+	- var href = "/doitac.html"
+block header
+	include ../lib/header/h-14/index.pug
+block body
+	include ../lib/ankhanh-breadcrumb/b-1/index.pug
+	include ../lib/nav/n-4/index.pug
+	include ../lib/ankhanhjvc/t-4/index.pug
+block footer
+	include ../lib/ankhanh-footer/f-1/index.pug

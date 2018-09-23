@@ -1,0 +1,38 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+section.canhcam-introduce-detail-2
+	.fixed-width
+		+pad(0 5%)
+		.slide
+			.title
+				+pad(2rem 0)
+				// margin-top: r(46px)
+				+fz(2rem)
+				color: color-get($ankhanh,main)
+				font-weight: bold
+				+mar(0)
+				+media-breakpoint-up(lg)
+					padding: 4rem 0
+					+fz(r(36px))
+			.content
+				+fz(r(16px))
+			.brief-content
+				+fz(r(22px))
+				color: color-get($ankhanh,brief-content)
+			.item
+				.circle
+					list-style-type: disc
+				p
+					+mar(0)
+			.box-img
+				img
+					width: 100%
+			+media-breakpoint-up(lg)
+				.box-img
+					display: flex
+					justify-content: center
+					img
+						width: initial
