@@ -184,11 +184,19 @@
 						.nav-item
 							position: relative
 							&:after
+								content: ''
+								width: 1px
+								height: 10px
+								+pos(abs,48% 0 null null)
+								background: black
+								transform: translateY(-50%)
 							.nav-link
-								+pad(0 .4rem)
+								+pad(0 .8rem)
 								border-bottom: 0
 								+fz(.85rem)
-								+fw(400)
+								+fw(300)
+								+lh(1.2)
+
 					.phone
 						+pad(0 1rem)
 						background: none
