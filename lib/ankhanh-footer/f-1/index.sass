@@ -76,8 +76,12 @@
 			margin-top: 2.14rem
 			border-radius: 2rem
 			+transition(all .5s ease-in-out)
-			&:hover
-				border: 1px solid color-get($mau-ankhanh,main-4)
+			+media-breakpoint-up(md)
+				&:hover
+					border: 1px solid color-get($mau-ankhanh,main-4)
+			+media-breakpoint-up(md)
+				&:active
+					border: 1px solid color-get($mau-ankhanh,main-4)
 			a 
 				+pad(2rem)
 .copy-right
