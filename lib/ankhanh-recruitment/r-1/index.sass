@@ -22,46 +22,40 @@ section.canhcam-ankhanh-recruitment-r-1
 					+fw(400)
 					color: color-get($mau-ankhanh, trang)
 					border: none
-					+pad(.5rem .5rem .5rem .5rem)
-					+media-breakpoint-up(md)
-						+pad(1rem 2.5 .5rem 2.5rem)
 					vertical-align: top
-				td 
-					+fz(1.07rem)
-					+fw(100)
-					border: none
-					+pad(0 0 0 2.5rem)
-					+media-breakpoint-down(md)
-						text-align: center
+					text-align: center
+					+media-breakpoint-up(md)
+						&:first-child
+							text-align: left
+							padding-left: 3rem
+						&:last-child
+							padding-right: 3rem
+
 		tbody
 			border: none
 			tr 
 				border: none
-				th.first 
-					width: 30% !important
 				th
 					+fz(1.07rem)
 					+fw(400)
 					border: none
-					+pad(1rem 0 .5rem 2.5rem)
 				td 
 					+fz(1.07rem)
 					+fw(100)
 					border: none
-					+pad(1rem 2.5rem 1rem 2.5rem)
-					+media-breakpoint-down(md)
-						text-align: center
-					+pad(1rem .5rem 1rem .5rem)
-					&:nth-child(1)
-						text-align: left
 					&:nth-child(2), &:nth-child(3),&:nth-child(4)
 						text-align: center
-				.new 
-					display: flex
-					justify-content: center 
-					align-items: center
-					img 
-						width: 50px
+					+media-breakpoint-up(md)
+						&:first-child
+							text-align: left
+							padding-left: 3rem
+						&:last-child
+							padding-right: 3rem
+				.new
+					
+				img
+					+media-breakpoint-up(md)
+						float: right
 				.no-new
 					display: none
 
