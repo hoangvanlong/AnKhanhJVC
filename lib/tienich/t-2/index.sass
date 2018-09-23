@@ -1,0 +1,62 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+
+.canhcam-utilities-2
+	img
+		width: 100%
+	.utilitie-wrap
+		.utilitie-list
+			.top-list
+				img
+					opacity: 0
+			.top-list , .part-list
+				figure
+					figcaption
+						p
+							color: #3e3e3e // add this color to color core to use color-get
+							+fz(1.07rem)
+							+fw(400)
+							text-align: center
+							overflow: hidden
+							text-overflow: ellipsis
+							-webkit-line-clamp: 5
+							display: -webkit-box
+							-webkit-box-orient: vertical
+							max-height: 8rem
+			.bottom-list
+				margin-top: 1rem
+				figure
+					figcaption
+						h2
+							+fz(3.43rem)
+							+fw(600)
+							color: color-get($mau , main)
+							span
+								display: block
+								+fz(1.86rem)
+						p
+							+fz(1.14rem)
+							+fw(300)
+	+media-breakpoint-up(lg)
+		.utilitie-wrap
+			.utilitie-list
+				.item
+					position: relative
+					overflow: hidden
+					margin-bottom: 1rem
+					&:before
+						content: ''
+						width: 100%
+						height: 0
+						background: color-rgba(color-get($mau , main),.3)
+						+pos(abs , 50% null null 50%)
+						+transform(translateX(-50%) translateY(-50%) rotate(45deg))
+						+transition(all .5s ease-in-out)
+					&:hover
+						&:before
+							height: 230%
+				.bottom-list
+					margin-top: 2rem
