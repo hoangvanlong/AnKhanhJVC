@@ -5,12 +5,13 @@
 body
 	background: url('../img/ankhanh-background/b_1.png') center center
 section.canhcam-ankhanh-recruitment-r-1
-	h2 
-		+fz(2.7rem)
-		margin-top: 3.5rem
-		margin-bottom: 2rem
+	h1 
+		+fz(2rem)
 		+fw(600)
+		margin-bottom: 2rem
 		color: color-get($ankhanh, main)
+		+media-breakpoint-up(lg)
+			+fz(r(36px))
 	table 
 		thead 
 			background: color-get($ankhanh, main)

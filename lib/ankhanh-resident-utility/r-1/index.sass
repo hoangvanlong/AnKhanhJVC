@@ -8,11 +8,13 @@ body
 	+pad(2rem 0)
 	+media-breakpoint-up(lg)
 		+pad(4rem 0 2.5rem 0)
-	h2 
-		+fz(2.57rem)
-		margin-bottom: 2rem
+	h1 
+		+fz(2rem)
 		+fw(600)
+		margin-bottom: 2rem
 		color: color-get($ankhanh, main)
+		+media-breakpoint-up(lg)
+			+fz(r(36px))
 	// Lưới các ô
 	.gallery-lists
 		+media-breakpoint-up(sm)
@@ -99,9 +101,9 @@ body
 					h2 
 						color: color-get($ankhanh, trang)
 						+fw(100)
-						+fz(1rem)
+						+fz(1.5rem)
 						position: absolute
-						bottom: 0%
+						bottom: 20px
 						width: 80%
 						display: flex
 						justify-content: center
@@ -109,8 +111,8 @@ body
 						text-align: center
 						+transition(all .5s ease-in-out)
 						line-height: 0 !important
-						+media-breakpoint-down(md)
-							+fz(1.7rem)
+						+media-breakpoint-up(lg)
+							+fz(r(15px))
 					.content
 						height: 100%
 						overflow: hidden
@@ -122,8 +124,8 @@ body
 						+text-sha(0 0 .5rem color-get($ankhanh,trang))
 						color: transparent
 						text-align: left
-						+media-breakpoint-down(md)
-							+fz(1.3rem)
+						+media-breakpoint-up(lg)
+							+fz(r(15px))
 			+media-breakpoint-up(md)
 				&:hover
 					figure
@@ -163,6 +165,7 @@ body
 								+text-sha(1px 1px 3px rgba(0,0,0,.4))
 								color: color-get($ankhanh,trang)
 								overflow: hidden
+	// Class jquery
 	&.canhcam-video-fixed-size.lg-outer
 	padding: 0
 	.lg-inner

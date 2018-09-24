@@ -8,18 +8,18 @@ body
 	+pad(2rem 0)
 	+media-breakpoint-up(lg)
 		+pad(4rem 0)
-	.bgw
-		background: color-get($ankhanh, trang)
-	h2 
-		+fz(2.57rem)
-		margin-bottom: 2rem
+	h1 
+		+fz(2rem)
 		+fw(600)
+		margin-bottom: 2rem
 		color: color-get($ankhanh, main)
+		+media-breakpoint-up(lg)
+			+fz(r(36px))
 	.news-list
 		.item
-			margin-bottom: 2rem
 			display: block
 			text-decoration: none
+			margin-bottom: 2rem
 			+transition(all .5s ease-in-out)
 			figure
 				position: relative
@@ -30,8 +30,9 @@ body
 					margin-bottom: 2rem
 					box-shadow: 0px 1px 0px 0 color-get($ankhanh, xam-3)
 					.text
-						+pad(1.5rem 0)
+						+pad(1.4rem 0)
 						flex-wrap: nowrap
+						overflow: hidden
 						.date
 							height: 4rem
 							+pad(.3rem 2rem)
@@ -39,7 +40,7 @@ body
 							+media-breakpoint-up(md)
 								+pad(.3rem 2rem)
 							p.day 
-								+fz(1.4rem)
+								+fz(r(20px))
 								+fw(600)
 								color: color-get($ankhanh, trang)
 								display: flex
@@ -49,24 +50,24 @@ body
 								+mar(0)
 								&:after
 									content: " "
-									+pos(abs, 50% null null null)
+									+pos(abs, 55% null null null)
 									width: 50%
 									background: color-get($ankhanh, trang)
 									height: 1px
-									top: 50%
 							time
+								+fz(r(13px))
 								color: color-get($ankhanh, trang)
 								display: flex
 								justify-content: center
 								align-items: center 
 								text-align: center
-						.title
-							+pad(0 1.5rem)
+						.news-title
+							+pad(0 .85rem)
 					h3
-						+fz(1.14rem)
+						+fz(r(16px))
 						+fw(600)
-						line-height: 1.5rem
 						color: color-get($ankhanh,den)
+						text-align: left
 					time
 						+fz(.9rem)
 						+fw(200)
@@ -74,7 +75,7 @@ body
 					p.content 
 						color: darken(color-get($ankhanh,trang) ,50%)
 						line-height: 1.5rem
-						+fz(1.07rem)
+						+fz(r(15px))
 						display: -webkit-box
 						-webkit-line-clamp: 3
 						-webkit-box-orient: vertical
@@ -96,47 +97,3 @@ body
 						box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.08)
 						h3 
 							color: color-get($ankhanh,main)
-// Panigation								
-.canhcam-ankhanh-panigation-n-1
-	padding-top: 2rem
-	.pagelist
-		+media-breakpoint-up(md)
-			+pad(2rem null 1rem null)
-		.pagination
-			margin-bottom: 0
-			.page-item
-				+bor-rad(0px)
-				margin-left: .5rem
-				+media-breakpoint-down(md)
-					margin-left: 1rem
-				&:first-child
-					margin-left: 0
-				.page-link
-					width: 2.5rem
-					height: 2.5rem
-					justify-content: center
-					align-items: center
-					display: flex
-					color: color-get($ankhanh,main)
-					+bor-rad(0px)
-					border: 1px solid color-get($ankhanh,main)
-					+fw(1.28rem)
-					background: color-get($ankhanh,trang)
-					+media-breakpoint-up(md)
-						&:hover
-							color: color-get($ankhanh,trang)
-							background: color-get($ankhanh,main)
-							border: 1px solid color-get($ankhanh,main)
-					+media-breakpoint-down(md)
-						width: 3rem
-						height: 3rem
-						+mar(0 .25rem)
-						&:active
-							color: color-get($ankhanh,trang)		
-							background: color-get($ankhanh,main)
-							border: 1px solid color-get($ankhanh,main)
-				&.active
-					.page-link
-						color: color-get($ankhanh,trang)
-						background: color-get($ankhanh,main)
-						border: 1px solid color-get($ankhanh,main)

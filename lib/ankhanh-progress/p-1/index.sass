@@ -8,8 +8,6 @@ body
 	+pad(2rem 0)
 	+media-breakpoint-up(lg)
 		+pad(4rem 0)
-	.bgw
-		background: color-get($ankhanh, trang)
 	.year
 		display: flex
 		p 
@@ -19,11 +17,13 @@ body
 			font-weight: 100
 			padding-top: 1rem
 			padding-right: 1rem
-	h2 
-		+fz(2.57rem)
-		margin-bottom: 2rem
+	h1 
+		+fz(2rem)
 		+fw(600)
+		margin-bottom: 2rem
 		color: color-get($ankhanh, main)
+		+media-breakpoint-up(lg)
+			+fz(r(36px))
 	select.yearProgress
 		font-size: 1.14rem
 		+fw(100)
