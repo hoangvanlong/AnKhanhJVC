@@ -5,7 +5,11 @@
 body
 	background: url('../img/ankhanh-background/b_1.png') center center
 .canhcam-ankhanh-customer-support-c-1
-	+pad(3.5rem 0 2.35rem 0)
+	+pad(0rem 0 2.35rem 0)
+	+media-breakpoint-up(md)
+		margin-top: 3.5rem
+	.col.mb-5
+		margin-bottom: 2rem !important
 	// Form edit here
 	form
 		border: 1px solid  color-get($ankhanh,main)
@@ -21,6 +25,9 @@ body
 		label
 			color: color-get($ankhanh, xam-ct)
 			+fw(400)
+			+fz(1rem)
+			+media-breakpoint-up(lg)
+				+fz(r(15px))
 		.has-danger
 			input, textarea, select
 				border-color: color-get($ankhanh,do-1)
@@ -28,8 +35,10 @@ body
 			text-align: center
 			font-size: 1.71rem
 			text-transform: uppercase
-			font-weight: inherit
+			font-weight: 600
 			margin-bottom: 2rem
+			+media-breakpoint-up(lg)
+				+fz(r(24px))
 		.btn-ankhanh
 			margin-top: 2rem
 			+pad(.5rem)
@@ -49,31 +58,11 @@ body
 					background: -moz-linear-gradient( 180deg, rgb(177,131,8) 0%, rgb(242,218,133) 100%)
 					background: -webkit-linear-gradient( 180deg, rgb(177,131,8) 0%, rgb(242,218,133) 100%)
 					background: -ms-linear-gradient( 180deg, rgb(177,131,8) 0%, rgb(242,218,133) 100%)
-	// Magic edit here
-	.accordion-option
-		display: flex
-		background: darken(color-get($ankhanh,main) ,0%)
-		margin-bottom: 1rem 
-		border: 1px solid  darken(color-get($ankhanh,main) ,0%)
-		+pad(.5rem .5rem .5rem 1rem)
-		align-items: center
-		color: color-get($ankhanh,trang)
-		h2 
-			+fw(bold)
-			text-transform: uppercase
-			color: color-get($ankhanh,trang)
-			margin-bottom: 0
-		input
-			border: 1px solid darken(color-get($ankhanh,trang) ,10%)
-			+pad(.15rem 1rem)
-			outline: none 
-			width: 150px 
-			min-width: 150px
 	// Answer edit here
 	#accordion
 		margin-bottom: 1.5rem !important
 		+media-breakpoint-down(md)
-			margin-bottom: 2.5rem !important
+			margin-bottom: 2rem !important
 		.card
 			border: none !important
 			margin-bottom: .5rem
@@ -84,6 +73,8 @@ body
 					+fz(1.14rem)
 					+fw(100)
 					line-height: inherit
+					+media-breakpoint-up(lg)
+						+fz(r(16px))
 					a 
 						+transition(all .5s ease-in-out)
 						display: flex
@@ -95,14 +86,12 @@ body
 								width: 1.5rem
 								display: none
 								color: color-get($ankhanh,main)
-								margin-left: 2rem
 						.plus-circle
 							img 
 								+transition(all .5s ease-in-out)
 								width: 1.5rem
 								display: block
 								color: darken(color-get($ankhanh,trang) ,50%)
-								margin-left: 2rem
 			&.active 
 				.card-header
 					border: none !important
@@ -112,6 +101,8 @@ body
 						a 
 							+fz(1.57rem)
 							color: color-get($ankhanh,main)
+							+media-breakpoint-up(lg)
+								+fz(r(22px))
 							.minus-circle
 								img 
 									display: block
@@ -126,47 +117,7 @@ body
 				+fz(1.07rem)
 				+fw(100)
 				+mar(0)
-// Panigation								
-.canhcam-ankhanh-panigation-n-1
-	padding-top: 2rem
-	.pagelist
-		+media-breakpoint-up(md)
-			+pad(2rem null 1rem null)
-		.pagination
-			margin-bottom: 0
-			.page-item
-				+bor-rad(0px)
-				margin-left: .5rem
+				+media-breakpoint-up(lg)
+					+fz(r(15px))
 				+media-breakpoint-down(md)
-					margin-left: 1rem
-				&:first-child
-					margin-left: 0
-				.page-link
-					width: 2.5rem
-					height: 2.5rem
-					justify-content: center
-					align-items: center
-					display: flex
-					color: color-get($ankhanh,main)
-					+bor-rad(0px)
-					border: 1px solid color-get($ankhanh,main)
-					+fw(1.28rem)
-					background: color-get($ankhanh,trang)
-					+media-breakpoint-up(md)
-						&:hover
-							color: color-get($ankhanh,trang)
-							background: color-get($ankhanh,main)
-							border: 1px solid color-get($ankhanh,main)
-					+media-breakpoint-down(md)
-						width: 3rem
-						height: 3rem
-						+mar(0 .25rem)
-						&:active
-							color: color-get($ankhanh,trang)		
-							background: color-get($ankhanh,main)
-							border: 1px solid color-get($ankhanh,main)
-				&.active
-					.page-link
-						color: color-get($ankhanh,trang)
-						background: color-get($ankhanh,main)
-						border: 1px solid color-get($ankhanh,main)
+					+pad(1.5rem 2rem 2.5rem 2rem)

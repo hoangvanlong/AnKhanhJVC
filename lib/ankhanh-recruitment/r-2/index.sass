@@ -4,11 +4,13 @@
 //////////////////////////////////////
 
 section.canhcam-ankhanh-recruitment-r-2
-	+mar(4rem 0)
+	margin-bottom: 4rem
 	h2 
 		+fz(2.7rem)
 		+fw(600)
 		color: color-get($ankhanh, main)
+		+media-breakpoint-up(lg)
+			+fz(r(36px))
 	.group
 		+media-breakpoint-up(md)
 			flex-wrap: nowrap
@@ -25,12 +27,13 @@ section.canhcam-ankhanh-recruitment-r-2
 				max-width: 47% !important
 				0 1rem
 			+media-breakpoint-down(md)
-				+mar(1rem)
+				+mar(0 1rem)
 				&:first-child
 					margin-bottom: 2rem !important
 		.c
 			background: color-get($ankhanh, trang)
 			width: 100%
+			height: 100%
 			+pad(2rem)
 			border-radius: 10px
 		.c3
@@ -40,16 +43,22 @@ section.canhcam-ankhanh-recruitment-r-2
 			+fz(2.8rem)
 			color: color-get($ankhanh, main)
 			z-index: 100
+			+media-breakpoint-up(lg)
+				+fz(r(48px))
 		h3 
 			+mar(0)
 			+pad(2.35rem 0 2.14rem)
 			+fw(400)
 			color: color-get($ankhanh, main)
 			z-index: 100
-			+fz(2.57rem)
+			+fz(1.28rem)
+			+media-breakpoint-up(lg)
+				+fz(r(18px))
 
 		p 
 			+fz(1.28rem)
 			+fw(100)
 			z-index: 100
 			margin-bottom: 0rem !important
+			+media-breakpoint-up(lg)
+				+fz(r(18px))
