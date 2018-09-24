@@ -24,6 +24,8 @@ body
 					+pad(1rem 0 .5rem 1.5rem)
 					+media-breakpoint-up(md)
 						+pad(1rem 0 .5rem 2.5rem)
+					+media-breakpoint-up(lg)
+						+fz(r(15px))
 				td 
 					+fz(1.07rem)
 					+fw(100)
@@ -32,6 +34,8 @@ body
 					text-align: center
 					+media-breakpoint-up(md)
 						text-align: left !important
+					+media-breakpoint-up(lg)
+						+fz(r(15px))
 		hr
 			+mar(.5rem 0 1.5rem 0)
 		.title-news	
@@ -40,6 +44,8 @@ body
 				+fw(600)
 				color: color-get($ankhanh, main)
 				+mar(0)
+				+media-breakpoint-up(lg)
+					+fz(r(22px))
 			.calendar
 				color: color-get($ankhanh, xam-1)
 				+mar(.5rem 0 1rem 0)
@@ -107,6 +113,8 @@ body
 					text-decoration: none
 					+fz(1.14)
 					+fw(500)
+					+media-breakpoint-up(lg)
+						+fz(r(16px))
 			.btn-contact.btn-contact-2
 				text-decoration: none
 				background: color-get($ankhanh, main)
@@ -116,6 +124,8 @@ body
 					text-decoration: none
 					+fz(1.14)
 					+fw(100)
+					+media-breakpoint-up(lg)
+						+fz(r(16px))
 	//relative news
 	.rela-news
 		margin-top: 1rem
@@ -135,10 +145,14 @@ body
 					display: flex
 					align-items: center
 					justify-content: center
+				+media-breakpoint-up(lg)
+					+fz(r(24px))
 			h3
 				color: color-get($ankhanh,main)
 				+fz(1.4rem)
 				margin-bottom: 0
+				+media-breakpoint-up(lg)
+					+fz(r(16px))
 		a
 			text-decoration: none
 		.item-news
@@ -147,6 +161,8 @@ body
 				+fw(100)
 				color: color-get($ankhanh,den)
 				+pad(.5rem 0 1rem 0)
+				+media-breakpoint-up(lg)
+					+fz(r(16px))
 			.calendar
 				+mar(.5rem 0 1rem 0)
 				// +media-breakpoint-down(md)
