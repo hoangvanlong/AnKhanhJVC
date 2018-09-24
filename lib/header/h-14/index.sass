@@ -5,9 +5,9 @@
 //////////////////////////////////////
 
 .canhcam-header-14
-	background: color-get($ankhanh,trang)
 	box-shadow: 0 0 5px rgba(0,0,0,.5)
 	+media-breakpoint-down(md)
+		background: color-get($ankhanh,trang)
 		background-image: none !important
 	&.fixedheader
 		position: fixed
@@ -104,7 +104,8 @@
 					color: color-get($ankhanh,main)
 		
 	.k-responsive-menu
-		background: color-get($ankhanh,trang)
+		+media-breakpoint-down(md)
+			background: color-get($ankhanh,trang)
 		.navbar-brand
 			color: color-get($ankhanh,trang)
 			img
@@ -130,10 +131,11 @@
 	+media-breakpoint-up(lg)
 		
 		.k-responsive-menu
-			background: color-get($ankhanh,trang)
 			padding-top: 0
 			padding-bottom: 0
 			position: relative
+			+media-breakpoint-down(md)
+				background: color-get($ankhanh,trang)
 			.navbar-brand
 				img 
 					max-height: 3rem
