@@ -8,6 +8,9 @@ body
 	+pad(2rem 0)
 	+media-breakpoint-up(lg)
 		+pad(4rem 0)
+	.news-details
+		+media-breakpoint-up(lg)
+			margin-top: 2.5rem
 	.news-read
 		text-align: start
 		hr
@@ -15,8 +18,10 @@ body
 		.title-news	
 			h1
 				+fz(1.57rem)
-				+fw(inherit)
+				+fw(600)
 				color: color-get($ankhanh, main)
+				+media-breakpoint-up(lg)
+					+fz(r(22px))
 		figure
 			+mar(2rem 0 1.5rem 0)
 			overflow: hidden
@@ -44,12 +49,16 @@ body
 			+lh(1.6rem)
 			margin: 0
 			color: color-get($ankhanh, xam-ct)
+			+media-breakpoint-up(lg)
+				+fz(r(15px))
 			&.lead
 				+fw(bold)
 		time
 			+fz(1.07rem)
 			+fw(100)
 			color: color-get($ankhanh,xam-1)
+			+media-breakpoint-up(lg)
+				+fz(r(15px))
 		.item-news-read
 			text-decoration: none
 		.social-networks
@@ -74,6 +83,8 @@ body
 					display: flex
 					align-items: center
 					justify-content: center
+				+media-breakpoint-up(lg)
+					+fz(r(24px))
 			// h3
 			// 	color: color-get($ankhanh,main)
 			// 	+fz(1.4rem)
@@ -87,11 +98,15 @@ body
 				color: color-get($ankhanh,den)
 				+pad(.5rem 0 .25 0)
 				+fw(100)
+				+media-breakpoint-up(lg)
+					+fz(r(15px))
 			time
 				+pad(1.07rem 0)
 				+fz(1.07rem)
 				+fw(100)
 				color: darken(color-get($ankhanh,trang) ,30%)
+				+media-breakpoint-up(lg)
+					+fz(r(15px))
 			img 
 				width: 100%
 				max-width: 100%
