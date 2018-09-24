@@ -11,10 +11,12 @@ body
 	.bgw
 		background: white
 	h2 
-		+fz(2.57rem)
-		margin-bottom: 2rem
+		+fz(2rem)
 		+fw(600)
+		margin-bottom: 2rem
 		color: color-get($ankhanh, main)
+		+media-breakpoint-up(lg)
+			+fz(r(36px))
 	.news-list
 		.item
 			display: block
@@ -30,7 +32,7 @@ body
 					margin-bottom: 2rem
 					box-shadow: 0px 1px 0px 0 color-get($ankhanh, xam-3)
 					.text
-						+pad(1.5rem 0)
+						+pad(1.4rem 0)
 						flex-wrap: nowrap
 						overflow: hidden
 						.date
@@ -40,7 +42,7 @@ body
 							+media-breakpoint-up(md)
 								+pad(.3rem 2rem)
 							p.day 
-								+fz(1.4rem)
+								+fz(r(20px))
 								+fw(600)
 								color: color-get($ankhanh, trang)
 								display: flex
@@ -50,24 +52,24 @@ body
 								+mar(0)
 								&:after
 									content: " "
-									+pos(abs, 50% null null null)
+									+pos(abs, 55% null null null)
 									width: 50%
 									background: color-get($ankhanh, trang)
 									height: 1px
-									top: 50%
 							time
+								+fz(r(13px))
 								color: color-get($ankhanh, trang)
 								display: flex
 								justify-content: center
 								align-items: center 
 								text-align: center
-						.title
-							+pad(0 1.5rem)
+						.resident-title
+							+pad(0 .85rem)
 					h3
-						+fz(1.14rem)
+						+fz(r(16px))
 						+fw(600)
-						line-height: 1.5rem
 						color: color-get($ankhanh,den)
+						text-align: left
 					time
 						+fz(.9rem)
 						+fw(200)
@@ -75,7 +77,7 @@ body
 					p.content 
 						color: darken(color-get($ankhanh,trang) ,50%)
 						line-height: 1.5rem
-						+fz(1.07rem)
+						+fz(r(15px))
 						display: -webkit-box
 						-webkit-line-clamp: 3
 						-webkit-box-orient: vertical
