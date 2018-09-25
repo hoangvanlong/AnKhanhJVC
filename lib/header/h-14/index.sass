@@ -26,6 +26,7 @@
 		background: color-get($ankhanh,main)
 		p
 			+fw(500)
+			margin-bottom: 0
 			color: color-get($ankhanh,trang)
 			&:before
 				content: '\f3f2'
@@ -49,6 +50,11 @@
 				padding-bottom: 1rem
 				padding-left: 0
 				border-bottom: 1px solid #e6e5e5
+	.mainnav
+		
+		position: relative
+	.searchbar
+		+pos(abs, 100% 0 null null)
 	.language
 		margin-bottom: 0 
 		display: flex

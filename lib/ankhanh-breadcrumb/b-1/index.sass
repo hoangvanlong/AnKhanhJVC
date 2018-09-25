@@ -40,6 +40,14 @@
 				align-items: center
 				&:first-child
 					padding-left: 0
+					a
+						+fz(1rem)
+						&:after
+							content: '\f2dc'
+							font-family: 'Material Design Icons'
+							display: inline-block
+							font-size: 0
+
 				a
 					color: color-get($ankhanh,trang)
 					text-decoration: none
@@ -139,3 +147,21 @@
 			.owl-carousel
 				.owl-nav
 					+opacity(1)
+	+media-breakpoint-up(lg)
+		.main-breadcrumb
+			.breadcrumb
+				.breadcrumb-item
+					&:first-child
+						a
+							+fz(0)
+							&:after
+								+fz(1.5rem)
+								+lh(1.5)
+	iframe
+		min-height: 280px
+		+media-breakpoint-up(sm)
+			min-height: 320px
+		+media-breakpoint-up(md)
+			min-height: 380px
+		+media-breakpoint-up(lg)
+			min-height: 480px
