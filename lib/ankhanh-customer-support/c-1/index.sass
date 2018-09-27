@@ -5,9 +5,7 @@
 body
 	background: url('../img/ankhanh-background/b_1.png') center center
 .canhcam-ankhanh-customer-support-c-1
-	+pad(0rem 0 2.35rem 0)
-	+media-breakpoint-up(md)
-		margin-top: 3.5rem
+	
 	.col.mb-5
 		margin-bottom: 2rem !important
 	// Form edit here
@@ -58,66 +56,78 @@ body
 					background: -moz-linear-gradient( 180deg, rgb(177,131,8) 0%, rgb(242,218,133) 100%)
 					background: -webkit-linear-gradient( 180deg, rgb(177,131,8) 0%, rgb(242,218,133) 100%)
 					background: -ms-linear-gradient( 180deg, rgb(177,131,8) 0%, rgb(242,218,133) 100%)
-	// Answer edit here
-	#accordion
-		margin-bottom: 1.5rem !important
-		+media-breakpoint-down(md)
-			margin-bottom: 2rem !important
-		.card
-			border: none !important
-			margin-bottom: .5rem
-			.card-header
-				background: none 
-				+pad(.25rem 0)
-				h4 
-					+fz(1.14rem)
-					+fw(100)
-					line-height: inherit
-					+media-breakpoint-up(lg)
-						+fz(r(16px))
-					a 
-						+transition(all .5s ease-in-out)
-						display: flex
-						color: color-get($ankhanh, xam-ct)
-						text-decoration: none
-						.minus-circle
-							img 
-								+transition(all .5s ease-in-out)
-								width: 1.5rem
-								display: none
-								color: color-get($ankhanh,main)
-						.plus-circle
-							img 
-								+transition(all .5s ease-in-out)
-								width: 1.5rem
-								display: block
-								color: darken(color-get($ankhanh,trang) ,50%)
-			&.active 
-				.card-header
-					border: none !important
-					h4 
-						+fw(500)
-						color: color-get($ankhanh,main)
-						a 
-							+fz(1.57rem)
-							color: color-get($ankhanh,main)
-							+media-breakpoint-up(lg)
-								+fz(r(22px))
-							.minus-circle
-								img 
-									display: block
-							.plus-circle
-								img 
-									display: none
-			.answer
-				background: color-get($ankhanh,xam-cs) !important
-				+pad(1.5rem 4rem 2.5rem 3rem)
-				line-height: 2rem
+	// nswer edit here
+section.canhcam-suppport-1
+	+pad(4rem null)
+	+media-breakpoint-up(lg)
+		+pad(5rem null)
+	.list-detail
+		.content
+			&:first-child
+				padding-top: 0
+				&:after
+					top: -15px
+			cursor: pointer
+			position: relative
+			padding-right: 1rem
+			border-bottom: 1px solid darken(color-get($ankhanh,trang),5%)
+			
+			h5
+				margin-bottom: 0
+				+fz(1.2rem)
+				+fw(500)
 				color: color-get($ankhanh,den)
-				+fz(1.07rem)
-				+fw(100)
-				+mar(0)
-				+media-breakpoint-up(lg)
-					+fz(r(15px))
-				+media-breakpoint-down(md)
-					+pad(1.5rem 2rem 2.5rem 2rem)
+				+pad(1rem 0)
+				position: relative
+				&:after
+					content: '\e881'
+					font-family: 'Linearicons-Free'
+					+pos(abs , -3px -15px null null)
+					+fz(1.3rem)
+					+lh(48.2px)
+					+transition(all .3s ease-in-out)
+			&.active
+				border-bottom: 0
+				h5
+					color: color-get($ankhanh,main)
+					+fw(600)
+					&:after
+						content: '\e882'
+		.lead
+			background: color-get($ankhanh, xam-4)
+			color: color-get($ankhanh,den)
+			+fw(500)
+			+pad(2rem)
+			+fz(1rem)
+			p
+				margin-bottom: .5rem
+			ul
+				list-style: none
+				margin-left: -40px
+				li
+					margin-bottom: .5rem
+	.validator
+		border: 1px solid  color-get($ankhanh,main)
+		background: darken(color-get($ankhanh,trang) ,0%)
+		+pad(2rem)
+		margin-bottom: 1rem !important
+		input, textarea, select
+			background: darken(color-get($ankhanh,trang) ,3%)
+			+pad(.6rem)
+		label
+			color: color-get($ankhanh, xam-ct)
+			+fw(400)
+			+fz(1rem)
+			+media-breakpoint-up(lg)
+				+fz(r(15px))
+		.has-danger
+			input, textarea, select
+				border-color: color-get($ankhanh,do-1)
+		h4 
+			text-align: center
+			font-size: 1.71rem
+			text-transform: uppercase
+			font-weight: 600
+			margin-bottom: 2rem
+			+media-breakpoint-up(lg)
+				+fz(r(24px))
