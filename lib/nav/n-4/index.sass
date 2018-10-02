@@ -9,6 +9,7 @@
 		justify-content: center
 		.nav-item
 			+pad(0)
+			position: relative
 			.nav-link
 				+fz(r(16px))
 				text-transform: uppercase
@@ -18,3 +19,17 @@
 				.nav-link
 					+bg-rad
 					color: color-get($ankhanh, trang)
+			&:after
+				+pos(abs,50% -2px null null)
+				display: block
+				content: ""
+				width: 1px
+				height: 1.2rem
+				background: color-get($ankhanh, den)
+				transform: translateX(-50%) translateY(-50%)
+			+ .active
+				&:after
+					display: none
+			&:last-child
+				&:after
+					display: none
