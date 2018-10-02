@@ -10,15 +10,17 @@
 		.nav-item
 			+pad(0)
 			position: relative
+			width: 50%
+			display: flex
+			justify-content: center
+			align-items: center
+			text-align: center
 			.nav-link
 				+fz(r(16px))
 				text-transform: uppercase
-				+pad(.6rem 1.5rem)
+				+pad(.6rem 0rem)
 				color: color-get($ankhanh, content)
-			+ .active
-				.nav-link
-					+bg-rad
-					color: color-get($ankhanh, trang)
+				width: 100%
 			&:after
 				+pos(abs,50% -2px null null)
 				display: block
@@ -27,9 +29,34 @@
 				height: 1.2rem
 				background: color-get($ankhanh, den)
 				transform: translateX(-50%) translateY(-50%)
-			+ .active
+			&:nth-child(2n)
 				&:after
 					display: none
 			&:last-child
 				&:after
 					display: none
+			+ .active
+				.nav-link
+					+bg-rad
+					color: color-get($ankhanh, trang)
+			+media-breakpoint-up(lg)
+				width: initial
+				.nav-link
+					+pad(.6rem 1.5rem)
+				&:after
+					+pos(abs,50% -2px null null)
+					display: block
+					content: ""
+					width: 1px
+					height: 1.2rem
+					background: color-get($ankhanh, den)
+					transform: translateX(-50%) translateY(-50%)
+				&:nth-child(2n)
+					&:after
+						display: block
+				&:last-child
+					&:after
+						display: none
+				+ .active
+					&:after
+						display: none
