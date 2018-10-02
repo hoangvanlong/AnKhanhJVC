@@ -4,29 +4,32 @@
 //////////////////////////////////////
 
 .canhcam-ankhanh-navbar
-	.navbar-2
-		border-bottom: 1px solid color-get($ankhanh,main)
-	.nav-item
-		+transition(all .5s ease-in-out)
-		.nav-link
-			+fz(1.14rem)
-			+fw(400)
-			color: color-get($ankhanh, xam-2)
-			text-transform: uppercase
-			+pad(.5rem 2.14rem)
-			border-radius: 0
-			+media-breakpoint-up(md)
-				&:hover
-					background: linear-gradient(-90deg, #ba8c2d 0%, #eed57e 100%)
-					color: color-get($ankhanh, trang) !important
-					border: none
-			+media-breakpoint-down(md)
-				&:active
-					background: linear-gradient(-90deg, #ba8c2d 0%, #eed57e 100%)
-					color: color-get($ankhanh, trang) !important
-					border: none
-	.active
-		background: linear-gradient(-90deg, #ba8c2d 0%, #eed57e 100%)
-		a 
-			color: color-get($ankhanh, trang) !important
-		border: none
+	.nav-list
+		border-bottom: 1px solid color-get($ankhanh, main)
+		justify-content: center
+		.nav-item
+			+pad(0)
+			position: relative
+			.nav-link
+				+fz(r(16px))
+				text-transform: uppercase
+				+pad(.6rem 1.5rem)
+				color: color-get($ankhanh, content)
+			+ .active
+				.nav-link
+					+bg-rad
+					color: color-get($ankhanh, trang)
+			&:after
+				+pos(abs,50% -2px null null)
+				display: block
+				content: ""
+				width: 1px
+				height: 1.2rem
+				background: color-get($ankhanh, den)
+				transform: translateX(-50%) translateY(-50%)
+			+ .active
+				&:after
+					display: none
+			&:last-child
+				&:after
+					display: none
