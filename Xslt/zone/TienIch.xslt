@@ -11,22 +11,24 @@
 	<!--Begin Zone-->
 	<xsl:template match="/">
 		<!-- Call Menu Items -->
-
-		<div class="row no-gutters">
 			<xsl:apply-templates select="/ZoneList/Zone"></xsl:apply-templates>
-		</div>
-
 	</xsl:template>
 
 	<!--Begin Zone Child-->
 	<xsl:template match="Zone">
+	<div class="row no-gutters">
 		<div class="col-lg-8 item">
+			<xsl:if test="position() mod 2 = 0">
+				<xsl:attribute name="class">
+					<xsl:text>col-lg-8 item order-lg-1</xsl:text>
+				</xsl:attribute>
+			</xsl:if>
 			<figure>
 				<xsl:attribute name="bg-img">
                     <xsl:value-of select="ImageUrl"></xsl:value-of>
                 </xsl:attribute>
 				<div class="boxzoom">
-					<img alt="">
+					<img>
 						<xsl:attribute name="src">
                     	<xsl:value-of select="ImageUrl"></xsl:value-of>
              		   </xsl:attribute>
@@ -40,6 +42,11 @@
 				<xsl:value-of select="Url"></xsl:value-of>
 				</xsl:attribute>
 				<figure>
+					<xsl:if test="position() mod 2 = 0">
+						<xsl:attribute name="class">
+							<xsl:text>reverse</xsl:text>
+						</xsl:attribute>
+					</xsl:if>
 					<figcaption>
 						<h3>
 							<xsl:value-of select="Title"></xsl:value-of>
@@ -47,10 +54,13 @@
 						<p>
 							<xsl:value-of select="Description" disable-output-escaping="yes"></xsl:value-of>
 						</p>
-						<p class="see-more">Xem thêm</p>
+						<p class="see-more">
+							<xsl:value-of select="/ZoneList/ViewMoreText" />
+						</p>
 					</figcaption>
 				</figure>
 			</a>
 		</div>
+	</div>
 	</xsl:template>
 </xsl:stylesheet>
