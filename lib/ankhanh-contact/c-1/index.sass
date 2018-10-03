@@ -40,63 +40,107 @@ body
 					+fz(r(16px))
 		.company
 			+mar(0 0 3.5rem 0)
-	form
-		input, textarea
-			background: darken(color-get($ankhanh,trang) ,3%)
-			+fz(1rem)
-			+fw(100)
-			+media-breakpoint-up(lg)
-				+fz(r(14px))
-		.form-control
-			color: color-get($ankhanh, den)
-			+pad(.6rem 1rem)
-			+mar(0 .5rem .5rem .5rem)
-		.input
-			height: 2rem
-		.help-block
-			ul
-				margin-bottom: 0
-				+fz(.9rem)
-				color: color-get($ankhanh,do-1)
-				li
-					padding-left: 1rem
-		.captcha
-			display: flex
-			justify-content: center
-			align-items: center
-			img 
-				width: 100%
-			p.captcha2
-				img
-					padding: .5rem !important
-			input
-				width: 50%
-		.btn-submit
-			cursor: pointer
-			width: 100%
-			background: color-get($ankhanh, xam-3)
-			justify-content: center
-			align-items: center
-			display: flex
-			margin: 0.5rem 0
-			border-radius: 25px
-			appearance:none !important
-			+transition(all .5s ease-in-out)
-			+media-breakpoint-up(md)
-				width: 70%
-				+pad(.5rem 2.5rem)
-			a
-				// font-family: 'Saira'
-				+fw(bold)
-				color: color-get($ankhanh, xam-submit)
-				+fz(1.07rem)
-				+media-breakpoint-up(lg)
-					+fz(r(15px))
-			+media-breakpoint-up(md)
-				+pad(.5rem 2.5rem)
-				&:hover
-					background: lighten(color-get($ankhanh, xam-3), 2%)
-			+media-breakpoint-down(md)
-				&:active
-					background: lighten(color-get($ankhanh, xam-3), 2%)
-
+///////////////////////////////////////////////////////////////////////////////////
+//// FIX
+///////////////////////////////////////////////////////////////////////////////////
+// Row Bootstrap
+.canhcam-ankhanh-contact-c-1 .validator .wrap-form > div
+	display: flex
+	flex-wrap: wrap
+// Form-group Bootstrap
+.canhcam-ankhanh-contact-c-1 .validator .wrap-form > div .form-group
+	+pad(0)
+	width: 100%
+	margin-bottom: 1rem
+	text-align: center
+	+media-breakpoint-up(lg)
+		text-align: left
+		width: 50%
+		+pad(0 15px)
+	&:nth-child(5)
+		width: 100% !important
+// label
+.canhcam-ankhanh-contact-c-1 .validator .wrap-form > div label
+	color: color-get($ankhanh, den)
+	+fz(1rem)
+	+fw(100)
+// input, textarea
+.canhcam-ankhanh-contact-c-1 .validator .wrap-form > div .form-group input, .canhcam-ankhanh-contact-c-1 .validator .wrap-form > div .form-group textarea
+	display: block
+	width: 100%
+	line-height: 2.5
+	border: 1px solid color-get($ankhanh, xam-3)
+	border-radius: 5px
+	background: #f8f8f8
+	color: color-get($ankhanh,den)
+	padding-left: 10px
+	text-align: center
+	&:focus
+		color: color-get($ankhanh, den)
+// textarea
+.canhcam-ankhanh-contact-c-1 .validator .wrap-form .form-group .qparagraph
+	width: 100% !important
+.canhcam-ankhanh-contact-c-1 .validator .wrap-form > div .form-group textarea
+	height: 100px !important
+	+pad(0 15px)
+// wrapp button
+.canhcam-ankhanh-contact-c-1 .validator .wrap-form .frm-btnwrap
+	margin-top: 1rem !important
+	display: flex
+	justify-content: center !important
+	align-items: center
+	text-align: center
+	+media-breakpoint-up(lg)
+		justify-content: flex-end !important
+		margin-right: 15px !important
+// button submit
+.canhcam-ankhanh-contact-c-1 .validator .wrap-form .frm-btnwrap
+	display: flex
+	justify-content: center
+	align-items: center
+.canhcam-ankhanh-contact-c-1 .validator .wrap-form .frm-btnwrap .frm-btn-submit
+	+fw(bold)
+	width: 120px
+	border-radius: 2rem
+	text-transform: uppercase
+	position: inherit
+	+media-breakpoint-up(lg)
+		+pos(abs, null 30px 25%)
+// button reset
+.canhcam-ankhanh-contact-c-1 .validator .wrap-form .frm-btnwrap .frm-btn-reset
+	display: none
+// capcha block
+.canhcam-ankhanh-contact-c-1 .validator .wrap-form .frm-captcha
+	display: flex
+	+pad(0)
+	flex-direction: row-reverse
+	justify-content: space-between
+	+media-breakpoint-up(lg)
+		flex-direction: row-reverse
+		justify-content: flex-end
+		+pad(0 15px)
+// capcha image block
+.canhcam-ankhanh-contact-c-1 .validator .wrap-form .frm-captcha .frm-captcha-input
+	width: 50%
+// capcha input label
+.canhcam-ankhanh-contact-c-1 .validator .wrap-form .frm-captcha .frm-captcha-input label
+	display: none
+// capcha input
+.canhcam-ankhanh-contact-c-1 .validator .wrap-form .frm-captcha .frm-captcha-input input
+	width: 100%
+	text-align: center
+	border: 1px solid color-get($ankhanh, xam-3)
+	border-radius: 5px
+	background: #f8f8f8
+	color: color-get($ankhanh,den)
+	display: block
+	padding-left: 10px
+	line-height: 2.5
+	&:focus
+		color: color-get($ankhanh, den)
+	+media-breakpoint-up(lg)
+		margin-left: 30px
+// capcha image block
+.canhcam-ankhanh-contact-c-1 .validator .wrap-form .frm-captcha .RadCaptcha
+	display: flex
+	flex-direction: column-reverse
