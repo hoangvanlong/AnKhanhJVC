@@ -4,7 +4,7 @@
 	<xsl:output method="html" indent="yes" />
 
 	<xsl:template match="/">
-		<section class="canhcam-introduce-detail-1" id="canhcam-detail-section-1" bg-img="./img/bg/bg-splendora.png">
+		<section class="canhcam-introduce-detail-1" id="canhcam-detail-section-1"  bg-img="/Data/Sites/1/skins/default/images/bg-splendora.png">
 			<div class="container fixed-width bg-white">
 				<div class="slide">
 					<h2 class="text-center text-uppercase title">
