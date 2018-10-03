@@ -18,7 +18,7 @@
 					</div>
 				</div>
 				<div class="row justify-content-center no-gutters">
-             	 	<div class="col-6 col-md-3 year">
+					<div class="col-6 col-md-3 year">
 						<p>Năm </p>
 						<select class="yearProgress">
 							<option value="">Năm</option>
