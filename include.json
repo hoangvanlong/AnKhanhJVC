@@ -93,7 +93,7 @@
                 "breadcrumb/b-1"
             ]
         },
-		"ankhanh-breadcrumb": {
+        "ankhanh-breadcrumb": {
             "header": [
                 "header/h-14"
             ],
@@ -101,7 +101,7 @@
                 "ankhanh-breadcrumb/b-1"
             ]
         },
-		"ankhanh-resident": {
+        "ankhanh-resident": {
             "header": [
                 "header/h-14"
             ],
@@ -109,7 +109,7 @@
                 "ankhanh-resident/r-1"
             ]
         },
-		"ankhanh-resident-utility": {
+        "ankhanh-resident-utility": {
             "header": [
                 "header/h-14"
             ],
@@ -117,7 +117,7 @@
                 "ankhanh-resident-utility/r-1"
             ]
         },
-		"ankhanh-news": {
+        "ankhanh-news": {
             "header": [
                 "header/h-14"
             ],
@@ -125,7 +125,7 @@
                 "ankhanh-news/n-1"
             ]
         },
-		"ankhanh-news-detail": {
+        "ankhanh-news-detail": {
             "header": [
                 "header/h-14"
             ],
@@ -133,7 +133,7 @@
                 "ankhanh-news-detail/n-1"
             ]
         },
-		"ankhanh-customer-support": {
+        "ankhanh-customer-support": {
             "header": [
                 "header/h-14"
             ],
@@ -141,7 +141,7 @@
                 "ankhanh-customer-support/c-1"
             ]
         },
-		"ankhanh-recruitment-detail": {
+        "ankhanh-recruitment-detail": {
             "header": [
                 "header/h-14"
             ],
@@ -149,16 +149,16 @@
                 "ankhanh-recruitment-detail/r-1"
             ]
         },
-		"ankhanh-recruitment": {
+        "ankhanh-recruitment": {
             "header": [
                 "header/h-14"
             ],
             "body": [
-				"ankhanh-recruitment/r-1",
-				"ankhanh-recruitment/r-2"
+                "ankhanh-recruitment/r-1",
+                "ankhanh-recruitment/r-2"
             ]
         },
-		"ankhanh-contact": {
+        "ankhanh-contact": {
             "header": [
                 "header/h-14"
             ],
@@ -166,7 +166,7 @@
                 "ankhanh-contact/c-1"
             ]
         },
-		"ankhanh-footer": {
+        "ankhanh-footer": {
             "header": [
                 "header/h-14"
             ],
@@ -174,7 +174,7 @@
                 "ankhanh-footer/f-1"
             ]
         },
-		"ankhanh-breadcrumb": {
+        "ankhanh-breadcrumb": {
             "header": [
                 "header/h-14"
             ],
@@ -182,7 +182,7 @@
                 "ankhanh-breadcrumb/b-1"
             ]
         },
-		"ankhanh-navbar": {
+        "ankhanh-navbar": {
             "header": [
                 "header/h-14"
             ],
@@ -190,7 +190,7 @@
                 "ankhanh-navbar/n-1"
             ]
         },
-		"ankhanh-panigation": {
+        "ankhanh-panigation": {
             "header": [
                 "header/h-14"
             ],
@@ -198,7 +198,7 @@
                 "ankhanh-panigation/p-1"
             ]
         },
-		"ankhanh-progress": {
+        "ankhanh-progress": {
             "header": [
                 "header/h-14"
             ],
